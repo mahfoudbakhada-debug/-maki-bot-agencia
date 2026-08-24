@@ -3,34 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maki Bot 🍣 | Bots de WhatsApp para peluquerías</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<title>Maki Bot | Automatización de Lujo para Peluquerías</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',sans-serif}
-body{background:#fff}
-.topbar{background:#111;color:#fff;text-align:center;padding:10px;font-size:13px}
-nav{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;padding:20px}
-.hero{max-width:1200px;margin:0 auto;padding:40px 20px;display:flex;gap:40px;flex-wrap:wrap}
-.btn{background:#25D366;color:#fff;padding:18px 30px;border-radius:100px;text-decoration:none;font-weight:800;display:inline-block}
-.card{background:#f7f7f7;padding:20px;border-radius:20px;margin-top:15px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+.gold{color:#D4AF37}
+h1,h2{font-family:'Playfair Display',serif}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #0a0a0a 70%)}
+.hero h1{font-size:3.5rem;line-height:1.1;max-width:700px}
+.hero h1 span{color:#D4AF37;font-style:italic}
+.hero p{color:#888;margin-top:20px;max-width:500px;font-size:1.1rem;font-weight:300}
+.cta{margin-top:35px;background: linear-gradient(135deg,#D4AF37,#b8962e);color:#000;padding:16px 40px;border-radius:100px;text-decoration:none;font-weight:600;letter-spacing:0.5px}
+.badges{margin-top:50px;display:flex;gap:30px;opacity:0.5;font-size:0.8rem;letter-spacing:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:60px 10%;background:#0f0f0f}
+.card{border:1px solid #222;background:#121212;padding:35px;border-radius:24px;position:relative}
+.card.featured{border-color:#D4AF37;background:linear-gradient(180deg,#1a1810,#121212);transform:scale(1.05)}
+.card h3{font-size:1.4rem;margin-bottom:10px}
+.card .price{font-size:2.5rem;font-weight:700;margin:20px 0}
+.card .price span{font-size:1rem;color:#888;font-weight:300}
+.card ul{list-style:none;margin-top:20px;color:#999;line-height:2}
+.btn{display:block;text-align:center;margin-top:25px;padding:12px;border-radius:100px;text-decoration:none;font-weight:600}
+.btn-gold{background:#D4AF37;color:#000}
+.btn-outline{border:1px solid #333;color:#fff}
+.demo{background:#D4AF37;color:#000;padding:80px 10%;text-align:center}
+.demo h2{font-size:3rem}
 </style>
 </head>
 <body>
-<div class="topbar">🍣 Maki Bot - Automatizamos peluquerías en Barcelona</div>
-<nav><strong>MAKI BOT 🍣</strong> <a href="https://wa.me/34631441910?text=Hola%20Maki%20Bot%20quiero%20info" class="btn">Hablar por WhatsApp</a></nav>
 <div class="hero">
-<div style="flex:1;min-width:300px">
-<h1 style="font-size:52px;line-height:0.9">Tu pelu<br><span style="color:#FF2D78">no pierde ni una cita más.</span></h1>
-<p style="margin:20px 0;color:#666;font-size:18px">Instalamos un bot de WhatsApp que reserva citas solo, a las 23:00, sin que contestes tú. Para peluquerías, barberías y centros de estética.</p>
-<a href="https://wa.me/34631441910?text=Hola%20Maki%20Bot%20quiero%20ver%20demo" class="btn">💬 Quiero ver una demo →</a>
-<div class="card">✔ 47€/mes ✔ Sin permanencia ✔ Instalado en 24h</div>
-<div class="card" style="background:#FFF0F5"><strong>Demo real:</strong> <a href="https://peluqueria-carmen.onrender.com" target="_blank">peluqueria-carmen.onrender.com</a> - Así lo verán tus clientas</div>
+<div style="border:1px solid #D4AF37;padding:6px 16px;border-radius:100px;font-size:0.7rem;letter-spacing:2px;margin-bottom:30px">MAKI BOT • LLEIDA & BARCELONA</div>
+<h1>Convertimos tu <span>WhatsApp</span> en tu mejor empleada.</h1>
+<p>Sistema de reservas automático para peluquerías que no quieren perder clientas a las 23:00h. Sin apps. Sin comisiones.</p>
+<a href="https://wa.me/34600000000" class="cta">Quiero mi demo gratis →</a>
+<div class="badges"><span>24/7 AUTOMÁTICO</span><span>•</span><span>SIN COMISIÓN</span><span>•</span><span>HECHO EN LLEIDA</span></div>
 </div>
-<div style="flex:1;min-width:300px;background:#111;color:#fff;padding:30px;border-radius:30px">
-<h2>¿Cómo funciona?</h2><br>
-<p>1. Clienta escribe "Hola"<br>2. Maki Bot le enseña precios y huecos<br>3. Reserva sola<br>4. Te llega a ti el aviso</p><br><br>
-<p style="color:#aaa">Ya funciona. Solo cambiamos el nombre y número por el tuyo.</p>
+
+<div class="cards">
+<div class="card">
+<h3>Esencial</h3>
+<div class="price">49€<span>/mes</span></div>
+<ul>
+<li>✓ Bot de reservas 24/7</li>
+<li>✓ Link personalizado</li>
+<li>✓ Configuración incluida</li>
+</ul>
+<a href="#" class="btn btn-outline">Empezar</a>
 </div>
+<div class="card featured">
+<div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#D4AF37;color:#000;padding:4px 12px;border-radius:100px;font-size:0.6rem;font-weight:700;letter-spacing:1px">MÁS POPULAR</div>
+<h3>Pro Peluquería</h3>
+<div class="price">89€<span>/mes</span></div>
+<ul>
+<li>✓ Todo lo de Esencial</li>
+<li>✓ Recordatorios automáticos</li>
+<li>✓ Web de reservas de lujo</li>
+<li>✓ Soporte prioritario</li>
+</ul>
+<a href="#" class="btn btn-gold">Quiero ser Pro</a>
+</div>
+<div class="card">
+<h3>Imperio</h3>
+<div class="price">149€<span>/mes</span></div>
+<ul>
+<li>✓ Todo lo de Pro</li>
+<li>✓ Multi-sede</li>
+<li>✓ Gestión de clientas VIP</li>
+<li>✓ Te consigo clientas</li>
+</ul>
+<a href="#" class="btn btn-outline">Hablar con Maki</a>
+</div>
+</div>
+
+<div class="demo">
+<h2>Peluquería Carmen ya está facturando más.</h2>
+<p style="margin-top:15px;opacity:0.7">Mira cómo lo ven sus clientas</p>
+<a href="https://peluqueria-carmen.onrender.com" style="display:inline-block;margin-top:25px;background:#000;color:#D4AF37;padding:14px 30px;border-radius:100px;text-decoration:none;font-weight:600">Ver Demo en Vivo →</a>
 </div>
 </body>
 </html>
